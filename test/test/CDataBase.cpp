@@ -12,9 +12,15 @@ void CDataBase::ConnectDB()
 	}
 }
 
-void CDataBase::SetQuery(const char* sql)
+void CDataBase::DisConnectDB()
 {
-	dbStat = mysql_query(ConnHandle, sql);
+	// db 연결 해제
+	mysql_close(ConnHandle);
+}
+
+void CDataBase::SetQuery(const char* query)
+{
+	dbStat = mysql_query(ConnHandle, query);
 	if (dbStat != 0)
 	{
 		fprintf(stderr, "MYsql Query err : %s\n", mysql_error(&Conn));

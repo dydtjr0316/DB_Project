@@ -9,6 +9,7 @@ private:
 	int dbStat;
 public:
 	void ConnectDB();
+	void DisConnectDB();
 	void SetQuery(const char* sql);
 	void PrintResult();
 };

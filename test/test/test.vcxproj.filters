@@ -13,8 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\db">
+    <Filter Include="소스 파일\00db">
       <UniqueIdentifier>{06a51e3f-e114-49f8-a740-e41a14f37066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00db\00SaveDB">
+      <UniqueIdentifier>{436a866e-2f6e-4e12-80b5-1a4d0cd415eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00db\01LoadDB">
+      <UniqueIdentifier>{0f35a188-1a7e-4b97-aae6-9bd97bc60e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01Event">
+      <UniqueIdentifier>{926ff84b-9577-48fc-9599-1fcdeaf9e2ac}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,15 +31,33 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CDataBase.cpp">
-      <Filter>소스 파일\db</Filter>
+      <Filter>소스 파일\00db</Filter>
+    </ClCompile>
+    <ClCompile Include="CEvent.cpp">
+      <Filter>소스 파일\01Event</Filter>
+    </ClCompile>
+    <ClCompile Include="CSaveDB.cpp">
+      <Filter>소스 파일\00db\00SaveDB</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CDataBase.h">
-      <Filter>소스 파일\db</Filter>
+      <Filter>소스 파일\00db</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEvent.h">
+      <Filter>소스 파일\01Event</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="flag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSaveDB.h">
+      <Filter>소스 파일\00db\00SaveDB</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

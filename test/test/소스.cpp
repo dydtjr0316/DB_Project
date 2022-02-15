@@ -1,10 +1,15 @@
 #include<iostream>
 #include<my_global.h>
 #include<mysql.h>
+#include "stdafx.h"
 #include "CDataBase.h"
 using namespace std;
 
 #pragma comment(lib,"libmysql.lib")
+vector<CEvent*> g_Event;
+#ifdef PARSING_EVENT_DATA_0215
+void ParsingEventData();
+#endif // PARSING_EVENT_DATA_0215
 
 int main()
 {
@@ -18,8 +23,12 @@ int main()
 
 
 
-	// db 연결 해제
-	//mysql_close(ConnHandle);
-
 	return 0;
 }
+
+#ifdef PARSING_EVENT_DATA_0215
+void ParsingEventData()
+{
+	// event 정보 파일 입출력
+}
+#endif // PARSING_EVENT_DATA_0215

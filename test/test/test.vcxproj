@@ -152,10 +152,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CDataBase.cpp" />
+    <ClCompile Include="CEvent.cpp" />
+    <ClCompile Include="CSaveDB.cpp" />
     <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CDataBase.h" />
+    <ClInclude Include="CEvent.h" />
+    <ClInclude Include="CSaveDB.h" />
+    <ClInclude Include="flag.h" />
+    <ClInclude Include="global.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
