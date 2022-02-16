@@ -24,6 +24,10 @@ int main()
 
 	//db->PrintResult();
 
+	string strTemp = "\"testC\"";
+
+	db->WriteLogDB(9999, strTemp, 10000, 6, 7, 8, 9, 10);
+
 
 
 	return 0;

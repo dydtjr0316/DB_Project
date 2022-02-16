@@ -40,12 +40,24 @@ void CDataBase::PrintResult()
 
 void CDataBase::WriteLogDB(const int& id, string& name, const int& eventNo, const int& var1, const int& var2, const int& var3, const int& var4, const int& var5)
 {
-	char logBase[200] = 
-		"insert into logdb(m_id, charctor_name, event_no, var_1, var_2, var_3, var_4, var_5)"
-		"values(% d, % s, % d, % d, % d, % d, % d, % d)";
-	char query[300];
+	char logBase[250] =
+		"insert into logdb (m_id, charctor_name, event_no, var_1, var_2, var_3, var_4, var_5) "
+		"values (%d, %s, % d, % d, % d, % d, % d, % d) "
+		"on duplicate key update "
+		"charctor_name = %s,"
+		"event_no = %d,"
+		"var_1 = %d,"
+		"var_2 = %d,"
+		"var_3 = %d,"
+		"var_4 = %d,"
+		"var_5 = %d";
 
-	sprintf_s(query, logBase, id, name.c_str(), eventNo, var1, var2, var3, var4, var5);
+	char query[350];
+
+	sprintf_s(query, logBase, 
+		id, name.c_str(), eventNo, var1, var2, var3, var4, var5,	// insert
+		name.c_str(), eventNo, var1, var2, var3, var4, var5			// update
+	);
 
 	SetQuery(query);
 }
