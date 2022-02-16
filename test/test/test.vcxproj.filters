@@ -25,6 +25,15 @@
     <Filter Include="소스 파일\01Event">
       <UniqueIdentifier>{926ff84b-9577-48fc-9599-1fcdeaf9e2ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\01Event\CHuntingEvent">
+      <UniqueIdentifier>{026dfb0d-655b-4876-9475-c981a8860d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01Event\CHuntingEvent\CHuntingEventDB">
+      <UniqueIdentifier>{03bc34b4-468c-4ec3-809f-fdd38f116689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01Event\CHuntingEvent\CHuntingEventScript">
+      <UniqueIdentifier>{ce6e34fa-ca75-4d49-967a-b851b04e8015}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="소스.cpp">
@@ -38,6 +47,15 @@
     </ClCompile>
     <ClCompile Include="CSaveDB.cpp">
       <Filter>소스 파일\00db\00SaveDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CHuntingEvent.cpp">
+      <Filter>소스 파일\01Event\CHuntingEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="CHuntingEventDB.cpp">
+      <Filter>소스 파일\01Event\CHuntingEvent\CHuntingEventDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CHuntingEventScript.cpp">
+      <Filter>소스 파일\01Event\CHuntingEvent\CHuntingEventScript</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +76,18 @@
     </ClInclude>
     <ClInclude Include="CSaveDB.h">
       <Filter>소스 파일\00db\00SaveDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CHuntingEvent.h">
+      <Filter>소스 파일\01Event\CHuntingEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="CHuntingEventDB.h">
+      <Filter>소스 파일\01Event\CHuntingEvent\CHuntingEventDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CHuntingEventScript.h">
+      <Filter>소스 파일\01Event\CHuntingEvent\CHuntingEventScript</Filter>
+    </ClInclude>
+    <ClInclude Include="enum.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
