@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="CDataBase.cpp" />
     <ClCompile Include="CEvent.cpp" />
+    <ClCompile Include="CEventMgr.cpp" />
     <ClCompile Include="CHuntingEvent.cpp" />
     <ClCompile Include="CHuntingEventDB.cpp" />
     <ClCompile Include="CHuntingEventScript.cpp" />
@@ -162,6 +163,7 @@
   <ItemGroup>
     <ClInclude Include="CDataBase.h" />
     <ClInclude Include="CEvent.h" />
+    <ClInclude Include="CEventMgr.h" />
     <ClInclude Include="CHuntingEvent.h" />
     <ClInclude Include="CHuntingEventDB.h" />
     <ClInclude Include="CHuntingEventScript.h" />

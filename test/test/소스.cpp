@@ -5,9 +5,9 @@
 #include "CHuntingEvent.h"
 #include "CDataBase.h"
 using namespace std;
-
+CEventMgr* g_Event_Mgr;
 #pragma comment(lib,"libmysql.lib")
-vector<CEvent*> g_Event;
+
 #ifdef PARSING_EVENT_DATA_0215
 bool ParsingEventData();
 #endif // PARSING_EVENT_DATA_0215
@@ -51,24 +51,25 @@ bool ParsingEventData() // 이부분은 app 쪽 기능으로 빼기
 			continue;
 		int eventID = stoi(str);
 
+		CEvent* parsingEvent;
 		switch ((Event::ID)eventID)
 		{
 		case Event::ID::eHungtingEvent:
 		{
-			CEvent* parsingEvent = new CHuntingEvent;
-			g_Event.push_back(parsingEvent);
+			parsingEvent = new CHuntingEvent;
 		}
 		break;
 
 		default:
 			break;
 		}
+		g_Event_Mgr->AddEvent((Event::ID)eventID, parsingEvent);
 	}
 
-	for (auto& ev : g_Event)
+	for (auto& ev : g_Event_Mgr->GetEventLst())
 	{
 		// parsing event 구현
-		ev->ParsingScript();
+		ev.second->ParsingScript();
 	}
 
 	return true;

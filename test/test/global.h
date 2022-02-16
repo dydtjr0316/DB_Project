@@ -1,4 +1,4 @@
 #pragma once
-#include "CEvent.h"
+#include "CEventMgr.h"
 
-extern vector<CEvent*> g_Event;
+extern CEventMgr* g_Event_Mgr;
