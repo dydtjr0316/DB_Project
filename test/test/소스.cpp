@@ -11,8 +11,6 @@ vector<CEvent*> g_Event;
 #ifdef PARSING_EVENT_DATA_0215
 bool ParsingEventData();
 #endif // PARSING_EVENT_DATA_0215
-#define SQL_INSERT_RECORD "INSERT INTO playerinfo VALUES \
-(NULL, % s, % d); " //"
 int main()
 {
 	if (ParsingEventData() == false)
@@ -23,13 +21,6 @@ int main()
 	db->ConnectDB();
 
 	//db->SetQuery("select * from logdb");
-	int testint = 9999;
-	char name[20] = "\"testname\"";
-	int testeventno = 10000;
-	char t[200] = "insert into logdb(m_id, charctor_name, event_no, var_1, var_2, var_3, var_4, var_5) values (%d, %s, % d, % d, % d, % d, % d, % d)";
-	char tt[500];
-	sprintf_s(tt, t, testint, name, testeventno, 1, 2, 3, 4, 5);
-	db->SetQuery(tt);
 
 	//db->PrintResult();
 

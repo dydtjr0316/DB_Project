@@ -37,3 +37,15 @@ void CDataBase::PrintResult()
 	}
 	mysql_free_result(Result);
 }
+
+void CDataBase::WriteLogDB(const int& id, string& name, const int& eventNo, const int& var1, const int& var2, const int& var3, const int& var4, const int& var5)
+{
+	char logBase[200] = 
+		"insert into logdb(m_id, charctor_name, event_no, var_1, var_2, var_3, var_4, var_5)"
+		"values(% d, % s, % d, % d, % d, % d, % d, % d)";
+	char query[300];
+
+	sprintf_s(query, logBase, id, name.c_str(), eventNo, var1, var2, var3, var4, var5);
+
+	SetQuery(query);
+}

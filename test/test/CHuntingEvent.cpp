@@ -13,7 +13,7 @@ bool CHuntingEvent::ParsingScript()
 
 	if (ifs.fail())
 	{
-		std::cerr << "Error!" << std::endl;
+		//std::cerr << "Error!" << std::endl;
 		return false;
 	}
 
