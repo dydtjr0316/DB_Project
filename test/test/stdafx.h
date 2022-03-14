@@ -1,12 +1,12 @@
 #pragma once
 // c++
-#include<iostream>
+#include <iostream>
 #include <fstream>
 #include <string>
 
 // mySQL
-#include<my_global.h>
-#include<mysql.h>
+#include <my_global.h>
+#include <mysql.h>
 
 // Stl
 #include <vector>
