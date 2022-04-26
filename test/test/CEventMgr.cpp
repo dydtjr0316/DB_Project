@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "CEventMgr.h"
+#include "CEvent.h"
 
 void CEventMgr::AddEvent(const Event::ID& eventID, CEvent* pEvent)
 {

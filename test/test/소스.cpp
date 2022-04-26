@@ -5,7 +5,7 @@
 #include "CHuntingEvent.h"
 #include "CDataBase.h"
 using namespace std;
-CEventMgr* g_Event_Mgr;
+CEventMgr* g_Event_Mgr = new CEventMgr;
 #pragma comment(lib,"libmysql.lib")
 
 #ifdef PARSING_EVENT_DATA_0215
@@ -33,8 +33,9 @@ int main()
 	return 0;
 }
 
+// 이부분은 app 쪽 기능으로 빼기 
 #ifdef PARSING_EVENT_DATA_0215
-bool ParsingEventData() // 이부분은 app 쪽 기능으로 빼기 
+bool ParsingEventData() 
 {
 	// event 정보 파일 입출력
 	std::ifstream ifs("../Script//Event//EventingScript.txt");
@@ -51,7 +52,10 @@ bool ParsingEventData() // 이부분은 app 쪽 기능으로 빼기
 			continue;
 		int eventID = stoi(str);
 
-		CEvent* parsingEvent;
+		//g_Event_Mgr->IsEventing(...) 함수 추가하기
+
+
+		CEvent* parsingEvent = nullptr;
 		switch ((Event::ID)eventID)
 		{
 		case Event::ID::eHungtingEvent:

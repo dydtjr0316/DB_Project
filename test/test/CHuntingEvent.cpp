@@ -27,7 +27,7 @@ bool CHuntingEvent::ParsingScript()
 		// token 별 스크립트 읽는 부분
 	}
 
-	for (auto& ev : g_Event)
+	for (auto& ev : g_Event_Mgr->GetEventLst())
 	{
 		// parsing event 구현
 	}

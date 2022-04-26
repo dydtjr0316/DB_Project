@@ -4,6 +4,8 @@
 class CHuntingEvent : public CEvent
 {
 public:
+	CHuntingEvent() {};
+public:
 	// CEvent을(를) 통해 상속됨
 	virtual void KillMonsterProcess() override;
 	virtual bool ParsingScript() override;
