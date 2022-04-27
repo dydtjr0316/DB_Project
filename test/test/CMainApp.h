@@ -8,5 +8,8 @@ public:
 public:
 	void GameLogic();
 	bool ParsingEvent();
+
+public: //test
+	void HuntingEventTest();
 };
 

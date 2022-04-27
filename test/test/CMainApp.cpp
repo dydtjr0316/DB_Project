@@ -52,5 +52,13 @@ bool CMainApp::ParsingEvent()
 
 	return true;
 }
+void CMainApp::HuntingEventTest()
+{
+	cout << "Hunting Event Test" << endl;
+	while (true)
+	{
+
+	}
+}
 #endif // PARSING_EVENT_DATA_0215
 
