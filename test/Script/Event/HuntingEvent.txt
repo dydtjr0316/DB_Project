@@ -1,0 +1,2 @@
+[KillCount] 5
+[LevelLimit] 10

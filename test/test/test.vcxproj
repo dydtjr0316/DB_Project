@@ -157,8 +157,9 @@
     <ClCompile Include="CHuntingEvent.cpp" />
     <ClCompile Include="CHuntingEventDB.cpp" />
     <ClCompile Include="CHuntingEventScript.cpp" />
+    <ClCompile Include="CMainApp.cpp" />
     <ClCompile Include="CSaveDB.cpp" />
-    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CDataBase.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="CHuntingEvent.h" />
     <ClInclude Include="CHuntingEventDB.h" />
     <ClInclude Include="CHuntingEventScript.h" />
+    <ClInclude Include="CMainApp.h" />
     <ClInclude Include="CSaveDB.h" />
     <ClInclude Include="enum.h" />
     <ClInclude Include="flag.h" />

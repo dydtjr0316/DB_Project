@@ -1,2 +1,11 @@
-﻿  소스.cpp
+﻿  CDataBase.cpp
+  CEvent.cpp
+  CEventMgr.cpp
+  CHuntingEvent.cpp
+  CHuntingEventDB.cpp
+  CHuntingEventScript.cpp
+  CMainApp.cpp
+  CSaveDB.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
   test.vcxproj -> D:\GitHube\DB_Project\test\x64\Debug\test.exe
