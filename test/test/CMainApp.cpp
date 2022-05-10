@@ -38,9 +38,29 @@ bool CMainApp::ParsingEvent()
 		}
 		break;
 
+		case Event::ID::eBurning_Event:
+		{
+			//parsingEvent = new CHuntingEvent;
+		}
+		break;
+
+		case Event::ID::eItem_Event:
+		{
+			//parsingEvent = new CHuntingEvent;
+		}
+		break;
+
+		case Event::ID::eDrop_Event:
+		{
+			//parsingEvent = new CHuntingEvent;
+		}
+		break;
+
 		default:
 			break;
 		}
+
+		if (parsingEvent == nullptr)continue;
 		g_Event_Mgr->AddEvent((Event::ID)eventID, parsingEvent);
 	}
 

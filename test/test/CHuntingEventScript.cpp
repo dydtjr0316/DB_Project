@@ -21,22 +21,21 @@ bool CHuntingEventScript::ParsingScript()
 	while (!ifs.eof()) {
 		string token;
 		string subToken;
-		ifs >> token;	// 
+		ifs >> token;
 
-		if (token.find("[KillCount]") != string::npos)
+		if (token == "[KillCount]")
 		{
 			ifs >> subToken;
 			m_iKillCount = stoi(subToken);
-			subToken = "";
-			token = "";
 		}
-		if (token.find("[LevelLimit]") != string::npos)
+		else if (token == "[LevelLimit]")
 		{
 			ifs >> subToken;
 			m_iLevelLimit = stoi(subToken);
-			subToken = "";
-			token = "";
 		}
+		
+		subToken.clear();
+		token.clear();
 	}
 
 	return true;
